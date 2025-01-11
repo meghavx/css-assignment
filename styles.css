@@ -289,7 +289,7 @@ header #nav-links a:visited {color: gainsboro;}
   margin: 3em auto; 
 }
 
-#contact-section .feedback-input {
+#contact-section .form-input-field {
   color:white;
   font-weight: 500;
   font-size: 18px;
@@ -305,7 +305,7 @@ header #nav-links a:visited {color: gainsboro;}
   outline: 0;
 }
 
-#contact-section .feedback-input:focus { 
+#contact-section .form-input-field:focus { 
   border: 0.25em double black; 
 }
 
