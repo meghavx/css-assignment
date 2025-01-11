@@ -225,6 +225,68 @@ header #nav-links a:active {
 
 
 
+/* CONTACT ME */
+#contact-section {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-section form { 
+  max-width:420px; 
+  margin:50px auto; 
+}
+
+#contact-section .feedback-input {
+  color:white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 0.25em double darkgray;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+#contact-section .feedback-input:focus { 
+  border: 0.25em double black; 
+}
+
+#contact-section textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#contact-section [type="submit"] {
+  width: 100%;
+  background-color: black;
+  border-radius: 0.5em;
+  border: 0.25em double rgb(145, 127, 127);
+  cursor: pointer;
+  color: rgb(145, 127, 127);
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight: 700;
+}
+
+#contact-section [type="submit"]:hover { 
+  background-color: rgb(145, 127, 127);
+  color: black;
+  border: 0.25em double black; 
+}
+
+
+
 /* FOOTER */
 footer {
   display: flex;
