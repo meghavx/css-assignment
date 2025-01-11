@@ -10,14 +10,21 @@ body {
   display: flex;
   flex-direction: column;
   background-color: gray;
-  /* background-image: url("assets/bg.jpg");
-  background-size: contain; */
-  font: 100% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: gainsboro;
+  font: 100% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
 }
+
+ul {list-style-type: none;}
 
 a {text-decoration: none;}
 
+a:link, 
+a:visited {color: wheat;}
+
+
+
+/* HEADER */
 header {
   display: flex;
   justify-content:space-between;
@@ -27,55 +34,38 @@ header {
   top: 0;
 }
 
-#logo-img {
+#header-logo {
   height: 80%;
   margin: 0.625em;
 }
 
-#navbar {margin: auto 2%;}
+header #navbar {margin: auto 2%;}
 
-ul {list-style-type: none;}
+header #nav-links li {float: left;}
 
-.nav-item,
-.social-link-item {float: left;}
-
-.nav-item a,
-.social-link-item a {
+header #nav-links a {
   display: inline-block;
   text-align: center;
   padding: 0.75em;
-  font: 1.5em 'Courier New', Courier, monospace
+  font: 1.5em 'Courier New', Courier, monospace;
 }
 
-a:link,
-a:visited {color: wheat;}
-
-nav a:hover,
-nav a:active {
-  font-weight: bold;
+header #nav-links a:hover,
+header #nav-links a:active {
+  font-weight: 300;
   background-color: rgb(145, 127, 127);;
   color: black;
 }
 
-#home-section,
-#about-section,
-#portfolio-section,
-#testimonials-section,
-#contact-section,
-footer {
+
+
+/* HOME */
+#home-section {
   display: flex;
-  height: 100vh;
-  padding: 10%;
+  flex-direction: column;
+  height: 100%;
   align-items: center;
   justify-content: center;
-}
-
-#home-section,
-#testimonials-section,
-footer {flex-direction: column;}
-
-#home-section {
-  padding: 6.25em;
   overflow: hidden;
 }
 
@@ -98,12 +88,11 @@ footer {flex-direction: column;}
   width: 7.5em;
   height: 2.25em;
   border: none;
-  background-color: rgb(120, 120, 120);;
+  background-color: rgb(120, 120, 120);
   font: italic 2em Cambria, Georgia, Times, 'Times New Roman', serif;
-  color: black;
 }
 
-#home-section a {
+#home-section-button a {
   color: black;
   text-decoration: underline;
 }
@@ -111,137 +100,138 @@ footer {flex-direction: column;}
 #home-section button:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
-  background-color:  rgb(145, 127, 127);
+  background-color: rgb(145, 127, 127);
 }
 
-#home-section-btn {
-  margin: auto;
-  margin-top: 6em;
-}
 
+
+/* ABOUT ME */
 #about-section {
-  height: 100vh;
-  padding: 20%;
-  text-align: justify;
+  display: flex;
+  height: 100%;
+  align-items: center;
   justify-content: space-around;
+  margin: auto;
+  padding: 10%;
+}
+
+#about-section img {
+  float: left;
+  height: 14em;
 }
 
 #about-section-bio {
-  margin-right: 10%;
+  padding: 10%;
+  font-size: 1.5em;
+}
+
+#about-section-bio span {
+  font-size: 2em;
+  font-weight: 600;
 }
 
 #about-section-bio::first-line {
   font-size: xx-large;
   vertical-align: middle;
-  color: wheat
+  color: wheat;
 }
 
-#hi-text {
-  font-size: 2em;
-  font-weight: 600;
+
+
+/* PORTFOLIO */
+#portfolio-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
 }
 
-#about-section img {
-  float: left;
-  height: 16em;
-  border-radius: 12em;
-}
-
-#about-section::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#about-section-bio {
-  padding: 5%;
-  font-size: 1.5em;
-  text-shadow: 2px 2px 5px slategray;
-}
-
-#portfolio-section {flex-wrap: wrap;}
-
-.portfolio-section-card {
+.portfolio-item {
   width: 240px;
   height: 240px;
+  margin: 1.5em;
+  padding: 0.75px;
+  border-radius: 0.75em;
+  text-align: justify;
 }
 
-#portfolio-section img, 
-.testimonials-left img {
+.portfolio-item img {
   height: 100%;
   width: 100%;
   object-fit: contain;
-}
-
-#portfolio-section img {
   border: 0.375em double black;
-  border-radius: 0.75em;
+  border-radius: 0.5em;
 }
 
-.testimonials-section-card {
+.portfolio-item:hover {
+  transform: scale(1.25);
+  transition: 0.3s ease-in-out;
+  border: 0.75em solid rgb(145, 127, 127);
+}
+
+
+
+/* TESTIMONIALS */
+#testimonials-section, #testimonials {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-item {
+  width: 50%;
+  margin: 1em;
+  padding: 1em;
+  border-left: 0.25em double darkgray;
+  border-bottom: 0.25em double darkgray;
+  border-radius: 0.75em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 25%;
 }
 
-.testimonials-left {
+#testimonials-section h2 {
+  text-align: center;
+  font-size: 5em;
+  color: black;
+}
+
+.testimonial-item-left {
+  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.testimonials-left img {
-  height: 24em;
-}
+.testimonial-item-left img {height: 6em;}
 
-.testimonials-section-card {
-  width: 60%;
-  height: 30%;
-  padding: 2em;
-  border: 0.25em double black;
-  border-radius: 1em;
-}
-
-.portfolio-section-card:hover {
-  transform: scale(1.25);
-  transition: 0.3s ease-in-out;
-  border: 0.75em solid rgb(145, 127, 127);
-}
-
-.portfolio-section-card {
-  border-radius: 0.75em;
-  margin: 1.5em;
-  padding: 0.75px;
-  text-align: justify;
-}
-
-#portfolio-section-heading,
-#testimonials-section-heading,
-#contact-section-heading {
+.testimonial-item-left h3 {
+  padding-top: 0.5em;
+  font-size: 1.25em;
   text-align: center;
-  font-size: 5em;
 }
 
-.client-review {
-  padding: 1.75em;
+.testimonial-item-right {flex: 8;}
+
+.testimonial-item-right p {
+  padding: 1em 1.5em;
   font-size: 1.25em;
 }
 
-#contact-section * {display: block;}
 
-#contact-form {
-  height: 70%;
-  width: 60%;
-}
 
-#contact-form * {margin: 10px;}
-
-#contact-section textarea {width: 100%;}
-
+/* FOOTER */
 footer {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   height: 15vh;
   background-color: rgb(145, 127, 127);
   font-size: small;
@@ -249,14 +239,23 @@ footer {
   bottom: 0;
 }
 
-.social-link-item img {height: 1.75em;}
+footer .social-link-item {float: left;}
 
-.social-link-item img:hover {
+footer .social-link-item img {height: 1.75em;}
+
+footer .social-link-item img:hover {
   transform: scale(1.2);
   transition: 0.3s ease-in-out;
 }
 
-#copyright {
+footer .social-link-item a {
+  display: inline-block;
+  text-align: center;
+  padding: 0.75em;
+  font: 1.5em 'Courier New', Courier, monospace
+}
+
+footer #copyright {
   font-size: medium;
   font-weight: 600;
   color: black;

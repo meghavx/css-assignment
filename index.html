@@ -16,50 +16,30 @@
 
 <body>
   <header>
-    <div id="logo">
-      <img id="logo-img" src="assets/letter-m_3.png" alt="">
-    </div>
+    <img id="header-logo" src="assets/letter-m_3.png" alt="Logo Image">
     <nav id="navbar">
       <ul id="nav-links">
-        <li class="nav-item">
-          <a href="#home-section" id="home-section-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about-section" id="about-section-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#portfolio-section" id="portfolio-section-link">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a href="#testimonials-section" id="tetimonials-section-link">Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact-section" id="contact-section-link">Contact</a>
-        </li>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#portfolio-section">Portfolio</a></li>
+        <li><a href="#testimonials-section">Testimonials</a></li>
+        <li><a href="#contact-section">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="home-section">
-    <div id="home-section-welcome">
-      <h1>WELCOME</h1>
-    </div>
-    <div id="home-section-subhead">
-      <h2>to my portfolio!</h2>
-    </div>
-    <div id="home-section-btn">
-      <button>
-        <a href="#portfolio-section" id="home-section-btn-link">See my work</a>
-      </button>
-    </div>  
+    <h1>WELCOME</h1>
+    <h2>to my portfolio!</h2>
+    <button>
+      <a href="#portfolio-section">See my work</a>
+    </button>
   </section>
 
   <section id="about-section">
-    <div id="about-section-photo">
-      <img src="assets/man_4825015.png" alt="">
-    </div>
+    <img src="assets/man_4825015.png" alt="About Me Picture">
     <div id="about-section-bio">
-      <span id="hi-text">Hi</span>, my name is <strong>Nathan</strong>.
+      <span>Hi</span>, my name is <strong>Nathan</strong>.
       <br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, delectus sint!
       <br><br>
@@ -68,128 +48,106 @@
   </section>
   
   <section id="portfolio-section">
-    <!-- <h2 id="portfolio-section-heading">Projects</h2> -->
-    <div class="portfolio-section-card">
-      <img class="portfolio-img" src="https://img.freepik.com/free-vector/hand-drawn-w-colours-illustration_52683-100270.jpg?t=st=1736490192~exp=1736493792~hmac=4d42c1615d8c4e7411b5056cf128bf724060767444f9807e22239b1240f2d960&w=826" alt="Card 1" id="portfolio-card-1">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">Project 1</h3>
-        <p class="portfolio-desc">Here goes a brief description of the project.</p>
+    <div class="portfolio-item">
+      <img src="https://img.freepik.com/free-vector/hand-drawn-w-colours-illustration_52683-100270.jpg?t=st=1736490192~exp=1736493792~hmac=4d42c1615d8c4e7411b5056cf128bf724060767444f9807e22239b1240f2d960&w=826" alt="Portfolio Item Image">
+      <div class="portfolio-item-overlay">
+        <h3>Project A</h3>
+        <p>Here goes a brief description of the project.</p>
       </div>
     </div>
-    <div class="portfolio-section-card">
-      <img class="portfolio-img" src="https://img.freepik.com/free-vector/beautiful-woman-surrounded-by-nature-illustration_53876-118423.jpg?t=st=1736491441~exp=1736495041~hmac=fcbc0c26c0bbef57f5d84e4add416386a2df7b70905f13f94fabbd458887b867&w=826" alt="Card 2" id="portfolio-card-2">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">Project 2</h3>
-        <p class="portfolio-desc">Here goes a brief description of the project.</p>
+    <div class="portfolio-item">
+      <img src="https://img.freepik.com/free-vector/beautiful-woman-surrounded-by-nature-illustration_53876-118423.jpg?t=st=1736491441~exp=1736495041~hmac=fcbc0c26c0bbef57f5d84e4add416386a2df7b70905f13f94fabbd458887b867&w=826" alt="Portfolio Item Image">
+      <div class="portfolio-item-overlay">
+        <h3>Project B</h3>
+        <p>Here goes a brief description of the project.</p>
       </div>
     </div>
-    <div class="portfolio-section-card">
-      <img class="portfolio-img" src="https://img.freepik.com/free-vector/hand-drawn-antelope_23-2147524323.jpg?t=st=1736491548~exp=1736495148~hmac=e5980c3ec1c57ce2e4ac9b440df99eaafbe4f448925b332db66c3980fdb6b92c&w=826" alt="Card 3" id="portfolio-card-3">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">Project 3</h3>
-        <p class="portfolio-desc">Here goes a brief description of the project.</p>
+    <div class="portfolio-item">
+      <img src="https://img.freepik.com/free-vector/hand-drawn-antelope_23-2147524323.jpg?t=st=1736491548~exp=1736495148~hmac=e5980c3ec1c57ce2e4ac9b440df99eaafbe4f448925b332db66c3980fdb6b92c&w=826" alt="Portfolio Item Image">
+      <div class="portfolio-item-overlay">
+        <h3>Project C</h3>
+        <p>Here goes a brief description of the project.</p>
       </div>
     </div>
-    <div class="portfolio-section-card">
-      <img class="portfolio-img" src="https://img.freepik.com/free-vector/hand-drawn-flat-autumn-illustration_23-2149096656.jpg?t=st=1736490326~exp=1736493926~hmac=5add33a45f21809a0292b374a06d8380cb9a98f85e9dfb601d450000095fe8ed&w=826" alt="Card 4" id="portfolio-card-4">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">Project 4</h3>
-        <p class="portfolio-desc">Here goes a brief description of the project.</p>
+    <div class="portfolio-item">
+      <img src="https://img.freepik.com/free-vector/hand-drawn-flat-autumn-illustration_23-2149096656.jpg?t=st=1736490326~exp=1736493926~hmac=5add33a45f21809a0292b374a06d8380cb9a98f85e9dfb601d450000095fe8ed&w=826" alt="Portfolio Item Image">
+      <div class="portfolio-item-overlay">
+        <h3>Project D</h3>
+        <p>Here goes a brief description of the project.</p>
       </div>
     </div>
-    <div class="portfolio-section-card">
-      <img class="portfolio-img" src="https://img.freepik.com/free-vector/flat-design-man-forest-illustration_52683-94451.jpg?t=st=1736490266~exp=1736493866~hmac=e76141e9672f5ec21ceb4623108192281007dbf122345321a00cc4285323aa8d&w=826" alt="Card 5" id="portfolio-card-5">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">Project 5</h3>
-        <p class="portfolio-desc">Here goes a brief description of the project.</p>
+    <div class="portfolio-item">
+      <img src="https://img.freepik.com/free-vector/flat-design-man-forest-illustration_52683-94451.jpg?t=st=1736490266~exp=1736493866~hmac=e76141e9672f5ec21ceb4623108192281007dbf122345321a00cc4285323aa8d&w=826" alt="Portfolio Item Image">
+      <div class="portfolio-item-overlay">
+        <h3>Project E</h3>
+        <p>Here goes a brief description of the project.</p>
       </div>
     </div>
-    <div class="portfolio-section-card">
-      <img class="portfolio-img" src="https://img.freepik.com/free-vector/beautiful-purple-woman-surrounded-by-nature-illustration_53876-97561.jpg?t=st=1736490235~exp=1736493835~hmac=0dc69a6ee93db12dfdad677fee2cae3e55a387c49b29c52b02788a2a37f16123&w=826" alt="Card 6" id="portfolio-card-6">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">Project 6</h3>
-        <p class="portfolio-desc">Here goes a brief description of the project.</p>
+    <div class="portfolio-item">
+      <img src="https://img.freepik.com/free-vector/beautiful-purple-woman-surrounded-by-nature-illustration_53876-97561.jpg?t=st=1736490235~exp=1736493835~hmac=0dc69a6ee93db12dfdad677fee2cae3e55a387c49b29c52b02788a2a37f16123&w=826" alt="Portfolio Item Image">
+      <div class="portfolio-item-overlay">
+        <h3>Project F</h3>
+        <p>Here goes a brief description of the project.</p>
       </div>
     </div>
     </div>
   </section>
 
   <section id="testimonials-section">
-    <h2 id="testimonials-section-heading">Testimonials</h2>
-    <div class="testimonials-section-card">
-      <div class="testimonials-left">
-        <img src="assets/man_4825038.png" alt="" class="testimonial-user-img">
-        <h3 class="client-name">John Doe</h3>
+    <h2>Testimonials</h2>
+    <div id="testimonials">
+      <div class="testimonial-item">
+        <div class="testimonial-item-left">
+          <img src="assets/man_4825087.png" alt="Client Photo">
+          <h3>John Doe</h3>
+        </div>
+        <div class="testimonial-item-right">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque ipsam inventore iure non rem doloribus, pariatur, nulla sint repudiandae voluptatum quas quod.</p>
+        </div>
       </div>
-      <div class="testimonials-right">
-        <p class="client-review">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias. Magnam, iure dolorum tempore, aliquam velit accusamus vitae est accusantium ullam consectetur sed saepe eaque assumenda amet minima praesentium sequi.
-        </p>
+
+      <div class="testimonial-item">
+        <div class="testimonial-item-left">
+          <img src="assets/woman_4825076.png" alt="Client Photo">
+          <h3>Nelly Furtado</h3>
+        </div>
+        <div class="testimonial-item-right">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laboriosam corrupti tenetur quia soluta debitis similique recusandae culpa optio, cumque qui, adipisci quidem, obcaecati cum voluptas illo ipsam perferendis atque.</p>
+        </div>
       </div>
-    </div>
-    <div class="testimonials-section-card">
-      <div class="testimonials-left">
-        <img src="assets/woman_4825076.png" alt="" class="testimonial-user-img">
-        <h3 class="client-name">Nelly Furtado</h3>
-      </div>
-      <div class="testimonials-right">
-        <p class="client-review">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias. Magnam, iure dolorum tempore, aliquam velit accusamus vitae est accusantium ullam consectetur sed saepe eaque assumenda amet minima praesentium sequi.
-        </p>
-      </div>
-    </div>
-    <div class="testimonials-section-card">
-      <div class="testimonials-left">
-        <img src="assets/man_4825087.png" alt="" class="testimonial-user-img">
-        <h3 class="client-name">Daniel Jackson</h3>
-      </div>
-      <div class="testimonials-right">
-        <p class="client-review">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, molestias. Magnam, iure dolorum tempore, aliquam velit accusamus vitae est accusantium ullam consectetur sed saepe eaque assumenda amet minima praesentium sequi.
-        </p>
+
+      <div class="testimonial-item">
+        <div class="testimonial-item-left">
+          <img src="assets/man_4825038.png" alt="Client Photo">
+          <h3>Daniel Jackson</h3>
+        </div>
+        <div class="testimonial-item-right">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis error tempora! Voluptates a vero possimus illum non ullam quam, quae tempore ipsa.</p>
+        </div>
       </div>
     </div>
+    
   </section>
 
-  <!-- <section id="contact-section">
-    <form id="contact-form">
-      <fieldset>
-        <legend id="contact-section-heading">Contact Me</legend>
-        <input type="text" id="visitor-name" placeholder="Name">
-        <input type="text" id="visitor-email" placeholder="Email">
-        <textarea type="text" id="visitor-message" placeholder="Message"></textarea>
-        <input type="submit" value="Send Message">
-      </fieldset>
-    </form>
-  </section> -->
-
-  <footer id="footer">
-    <ul id="social-links-list">
+  <footer>
+    <ul>
       <li class="social-link-item">
         <a href="mailto:megha.verma@g10x.com" target="_blank">
-          <img 
-            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" 
-            alt="Email Icon"
-          >
+          <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" alt="Email Icon">
         </a>
       </li>
       <li class="social-link-item">
         <a href="https://www.linkedin.com/in/meghaaverma" target="_blank">
-          <img 
-            src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" 
-            alt="LinkedIn Icon"
-          >
+          <img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" alt="LinkedIn Icon">
         </a>
       </li>
       <li class="social-link-item">
         <a href="https://github.com/meghavx/" target="_blank">
-          <img 
-            src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" 
-            alt="GitHub Icon"
-          >
+          <img src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" alt="GitHub Icon">
         </a>
       </li>
     </ul>
+    
     <!-- <cite id="citations">
       <ul>
         <li>
