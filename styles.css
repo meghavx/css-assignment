@@ -12,17 +12,19 @@ body {
   background-color: gray;
   color: gainsboro;
   font: 100% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: justify;
+  overflow-x: hidden;
 }
+
+p {text-align: justify;}
 
 ul {list-style-type: none;}
 
 a {text-decoration: none;}
 
-a:link, 
-a:visited {color: wheat;}
-
-
+section {
+  height: 100vh;
+  width: 100%;
+}
 
 /* HEADER */
 header {
@@ -47,15 +49,20 @@ header #nav-links a {
   display: inline-block;
   text-align: center;
   padding: 0.75em;
-  font: 1.5em 'Courier New', Courier, monospace;
+  font: 1em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+}m
+
+header #nav-links a:active,
+header #nav-links a:hover {
+  background-color: rgb(145, 127, 127);
+  color: black;
+  font-weight: 500;
 }
 
-header #nav-links a:hover,
-header #nav-links a:active {
-  font-weight: 300;
-  background-color: rgb(145, 127, 127);;
-  color: black;
-}
+header #nav-links a:link, 
+header #nav-links a:visited {color: gainsboro;}
 
 
 
@@ -63,43 +70,46 @@ header #nav-links a:active {
 #home-section {
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  justify-content:flex-start;
 }
 
 #home-section h1 {
-  margin-top: 0.2em;
-  margin-bottom: 0;
+  margin-top: 8%;
   font-size: 10vw;
   font-weight: 400;
+  color: black;
 }
 
 #home-section h2 {
-  font-size: 5em;
+  font-size: 3vw;
   font-weight: bold;
   font-style: italic;
-  color: black;
-  margin: auto 1.5em;
+  color: gainsboro;
 }
 
 #home-section button {
   width: 7.5em;
   height: 2.25em;
-  border: none;
+  margin: 2em;
+  border-top: none;
+  border-left: none;
+  border-right: 0.15em double black;
+  border-bottom: 0.15em double black;
+  border-radius: 0.25em;
   background-color: rgb(120, 120, 120);
   font: italic 2em Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 
-#home-section-button a {
+#home-section button a {
   color: black;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 #home-section button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.3s ease-in-out;
+  text-decoration: none;
   background-color: rgb(145, 127, 127);
 }
 
@@ -108,11 +118,9 @@ header #nav-links a:active {
 /* ABOUT ME */
 #about-section {
   display: flex;
-  height: 100%;
   align-items: center;
-  justify-content: space-around;
-  margin: auto;
-  padding: 10%;
+  justify-content: center;
+  padding: 20%;
 }
 
 #about-section img {
@@ -133,24 +141,29 @@ header #nav-links a:active {
 #about-section-bio::first-line {
   font-size: xx-large;
   vertical-align: middle;
-  color: wheat;
+  color: black;
 }
 
 
 
 /* PORTFOLIO */
-#portfolio-section {
+#portfolio-section, #portfolio {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
-  padding: 10%;
   align-items: center;
   justify-content: center;
+}
+
+#portfolio-section h2 {
+  text-align: center;
+  font-size: 4em;
+  color: black;
 }
 
 .portfolio-item {
   width: 240px;
   height: 240px;
+  position: relative;
   margin: 1.5em;
   padding: 0.75px;
   border-radius: 0.75em;
@@ -165,10 +178,33 @@ header #nav-links a:active {
   border-radius: 0.5em;
 }
 
+.portfolio-item-overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 0.5em;
+}
+
 .portfolio-item:hover {
   transform: scale(1.25);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in;
   border: 0.75em solid rgb(145, 127, 127);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {opacity: 1;}
+
+.portfolio-item-overlay h3 {padding: 1em;}
+
+.portfolio-item-overlay p {
+  padding: 0.75em;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
 }
 
 
@@ -177,9 +213,14 @@ header #nav-links a:active {
 #testimonials-section, #testimonials {
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+#testimonials-section h2 {
+  text-align: center;
+  font-size: 4em;
+  color: black;
 }
 
 .testimonial-item {
@@ -192,12 +233,6 @@ header #nav-links a:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#testimonials-section h2 {
-  text-align: center;
-  font-size: 5em;
-  color: black;
 }
 
 .testimonial-item-left {
@@ -226,16 +261,22 @@ header #nav-links a:active {
 
 
 /* CONTACT ME */
-#contact-section {
+#contact-section, #contact-form {
   display: flex;
-  height: 100%;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+#contact-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: black;
+}
+
 #contact-section form { 
-  max-width:420px; 
-  margin:50px auto; 
+  max-width: 600px; 
+  margin: 3em auto; 
 }
 
 #contact-section .feedback-input {
@@ -259,7 +300,7 @@ header #nav-links a:active {
 }
 
 #contact-section textarea {
-  height: 150px;
+  height: 200px;
   line-height: 150%;
   resize: vertical;
 }
@@ -291,10 +332,9 @@ header #nav-links a:active {
 footer {
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
   justify-content: center;
-  height: 15vh;
+  height: 12vh;
   background-color: rgb(145, 127, 127);
   font-size: small;
   position: sticky;
