@@ -19,16 +19,14 @@ ul {list-style-type: none;}
 
 a {text-decoration: none;}
 
-section {
-  height: 100vh;
-  width: 100%;
-}
+
 
 /* HEADER */
 header {
   display: flex;
+  align-items: center;
   justify-content:space-between;
-  height: 8vh;
+  height: 5em;
   background-color: black;
   position: sticky;
   top: 0;
@@ -36,22 +34,27 @@ header {
 }
 
 #header-logo {
-  height: 80%;
-  margin: 0.625em;
+  height: 4em;
+  margin: 1em;
 }
 
-header #navbar {margin: auto 2%;}
+header #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto 2%;
+}
 
-header #nav-links li {float: left;}
+header #nav-links li {display: inline-block;}
 
 header #nav-links a {
-  display: inline-block;
   text-align: center;
   padding: 0.75em;
   font: 1.25em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-variant: small-caps;
   letter-spacing: 0.1em;
-}m
+}
 
 header #nav-links a:active,
 header #nav-links a:hover {
@@ -71,6 +74,8 @@ header #nav-links a:visited {color: gainsboro;}
   flex-direction: column;
   align-items: center;
   justify-content:flex-start;
+  height: 100%;
+  width: 100%;
 }
 
 #home-section h1 {
@@ -116,18 +121,26 @@ header #nav-links a:visited {color: gainsboro;}
 /* ABOUT ME */
 #about-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 20%;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#about-section-photo {
+  flex: 3;
+  margin: 3em;
 }
 
 #about-section img {
-  float: left;
-  height: 14em;
+  max-height: 18em;
 }
 
 #about-section-bio {
-  padding: 10%;
+  flex: 7;
   font-size: 1.5em;
 }
 
@@ -150,6 +163,8 @@ header #nav-links a:visited {color: gainsboro;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 #portfolio {
@@ -158,6 +173,7 @@ header #nav-links a:visited {color: gainsboro;}
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 #portfolio-section h2 {
@@ -222,6 +238,8 @@ header #nav-links a:visited {color: gainsboro;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 #testimonials {
@@ -240,7 +258,6 @@ header #nav-links a:visited {color: gainsboro;}
 
 .testimonial-item {
   display: flex;
-  flex: 3;
   height: 480px;
   width: 330px;
   flex-direction: column;
@@ -277,6 +294,8 @@ header #nav-links a:visited {color: gainsboro;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 #contact-section h2 {
@@ -345,7 +364,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 12vh;
+  height: 12%;
   background-color: rgb(145, 127, 127);
   font-size: small;
   position: sticky;
