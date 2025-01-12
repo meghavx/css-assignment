@@ -32,6 +32,7 @@ header {
   background-color: black;
   position: sticky;
   top: 0;
+  z-index: 1000; 
 }
 
 #header-logo {
@@ -152,7 +153,8 @@ header #nav-links a:visited {color: gainsboro;}
 }
 
 #portfolio {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -162,7 +164,7 @@ header #nav-links a:visited {color: gainsboro;}
   text-align: center;
   font-size: 4em;
   color: black;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .portfolio-item {
