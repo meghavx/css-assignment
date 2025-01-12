@@ -169,11 +169,24 @@ header #nav-links a:visited {color: gainsboro;}
 
 #portfolio {
   display: grid;
-  grid-template-columns: auto auto auto;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   height: auto;
+}
+
+@media (max-width: 1024px) {
+  #portfolio {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (max-width: 768px) {
+  #portfolio {grid-template-columns: 1fr;}
+
+  .portfolio-item {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .portfolio-item img {height: auto;}
 }
 
 #portfolio-section h2 {
