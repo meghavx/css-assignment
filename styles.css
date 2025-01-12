@@ -95,7 +95,7 @@ header #nav-links a:visited {color: gainsboro;}
   border-right: 0.15em double black;
   border-bottom: 0.15em double black;
   border-radius: 0.25em;
-  background-color: rgb(120, 120, 120);
+  background-color: rgb(145, 127, 127);
   font: italic 2em Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -108,7 +108,6 @@ header #nav-links a:visited {color: gainsboro;}
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
   text-decoration: none;
-  background-color: rgb(145, 127, 127);
 }
 
 
