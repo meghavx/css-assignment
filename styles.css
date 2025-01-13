@@ -20,17 +20,16 @@ ul {list-style-type: none;}
 a {text-decoration: none;}
 
 
-
 /* HEADER */
 header {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   height: 5em;
   background-color: black;
   position: sticky;
   top: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 #header-logo {
@@ -46,7 +45,9 @@ header #navbar {
   margin: auto 2%;
 }
 
-header #nav-links li {display: inline-block;}
+header #nav-links li {
+  display: inline-block;
+}
 
 header #nav-links a {
   text-align: center;
@@ -63,9 +64,25 @@ header #nav-links a:hover {
   font-weight: 500;
 }
 
-header #nav-links a:link, 
-header #nav-links a:visited {color: gainsboro;}
+header #nav-links a:link,
+header #nav-links a:visited {
+  color: gainsboro;
+}
 
+@media (max-width: 768px) {
+  header {
+    height: 4em;
+  }
+
+  #header-logo {
+    height: 2.5em;
+  }
+
+  header #nav-links a {
+    font-size: 1em;
+    padding: 0.25em;
+  }
+}
 
 
 /* HOME */
@@ -73,9 +90,10 @@ header #nav-links a:visited {color: gainsboro;}
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
+  padding-top: 1.5%
 }
 
 #home-section h1 {
@@ -83,6 +101,7 @@ header #nav-links a:visited {color: gainsboro;}
   font-size: 10vw;
   font-weight: 400;
   color: black;
+  text-shadow: 6px 6px rgb(145, 127, 127);
 }
 
 #home-section h2 {
@@ -91,6 +110,7 @@ header #nav-links a:visited {color: gainsboro;}
   font-style: italic;
   color: gainsboro;
   margin-bottom: 1em;
+  text-shadow: 1px 1px black;
 }
 
 #home-section button {
@@ -98,9 +118,9 @@ header #nav-links a:visited {color: gainsboro;}
   height: 2.25em;
   border-top: none;
   border-left: none;
-  border-right: 0.15em double black;
-  border-bottom: 0.15em double black;
-  border-radius: 0.25em;
+  border-right: 0.2em double black;
+  border-bottom: 0.2em double black;
+  border-radius: 0.2em;
   background-color: rgb(145, 127, 127);
   font: italic 2em Cambria, Georgia, Times, 'Times New Roman', serif;
 }
@@ -116,6 +136,32 @@ header #nav-links a:visited {color: gainsboro;}
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  #home-section {
+    padding-top: 10%;
+  }
+
+  #home-section h1 {
+    font-weight: bold;
+  }
+
+  #home-section h2 {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+
+  #home-section button {
+    width: 8em;
+    height: 2.5em;
+    border-top: none;
+    border-left: none;
+    border-right: 0.15em double black;
+    border-bottom: 0.15em double black;
+    border-radius: 0.25em;
+    background-color: rgb(145, 127, 127);
+    font: italic 1em Cambria, Georgia, Times, 'Times New Roman', serif;
+  }
+}
 
 
 /* ABOUT ME */
@@ -123,28 +169,28 @@ header #nav-links a:visited {color: gainsboro;}
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 60%;
   margin: auto;
   min-height: 100vh;
-  width: 70%;
 }
 
 #about-section-photo {
-  flex: 3;
-  margin: 3em;
+  flex: 4;
+  margin-right: 4em;
+  text-align: center;
 }
 
 #about-section img {
-  max-height: 18em;
-}
-
-@media (max-width: 768px) {
-  #about-section img {height: 10em;}
+  max-width: 16em;
 }
 
 #about-section-bio {
   flex: 6;
+  padding: 1em;
   font-size: 1.5em;
+  text-align: justify;
+  text-shadow: 3px 3px rgb(145, 127, 127);
 }
 
 #about-section-bio span {
@@ -156,8 +202,26 @@ header #nav-links a:visited {color: gainsboro;}
   font-size: xx-large;
   vertical-align: middle;
   color: black;
+  text-shadow: 4px 4px rgb(145, 127, 127);
 }
 
+@media (max-width: 768px) {
+  #about-section {width: 70%;}
+
+  #about-section img {
+    width: 10em;
+    margin-right: 1em;
+  }
+
+  #about-section-bio {
+    font-size: 1em;
+  }
+
+  #about-section-bio span,
+  #about-section-bio::first-line {
+    font-size: 1.25em;
+  }
+}
 
 
 /* PORTFOLIO */
@@ -177,11 +241,15 @@ header #nav-links a:visited {color: gainsboro;}
 }
 
 @media (max-width: 1024px) {
-  #portfolio {grid-template-columns: repeat(2, 1fr);}
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  #portfolio {grid-template-columns: 1fr;}
+  #portfolio {
+    grid-template-columns: 1fr;
+  }
 
   .portfolio-item {
     width: 100%;
@@ -189,7 +257,9 @@ header #nav-links a:visited {color: gainsboro;}
     height: auto;
   }
 
-  .portfolio-item img {height: auto;}
+  .portfolio-item img {
+    height: auto;
+  }
 }
 
 #portfolio-section h2 {
@@ -197,6 +267,7 @@ header #nav-links a:visited {color: gainsboro;}
   font-size: 4em;
   color: black;
   margin-bottom: 0.5em;
+  text-shadow: 4px 4px rgb(145, 127, 127);
 }
 
 .portfolio-item {
@@ -235,9 +306,13 @@ header #nav-links a:visited {color: gainsboro;}
   border: 0.75em solid rgb(145, 127, 127);
 }
 
-.portfolio-item:hover .portfolio-item-overlay {opacity: 1;}
+.portfolio-item:hover .portfolio-item-overlay {
+  opacity: 1;
+}
 
-.portfolio-item-overlay h3 {padding: 1em;}
+.portfolio-item-overlay h3 {
+  padding: 1em;
+}
 
 .portfolio-item-overlay p {
   padding: 0.75em;
@@ -245,7 +320,6 @@ header #nav-links a:visited {color: gainsboro;}
   text-align: center;
   font-style: italic;
 }
-
 
 
 /* TESTIMONIALS */
@@ -270,6 +344,7 @@ header #nav-links a:visited {color: gainsboro;}
   font-size: 4em;
   color: black;
   margin-bottom: 1em;
+  text-shadow: 4px 4px rgb(145, 127, 127);
 }
 
 .testimonial-item {
@@ -287,7 +362,9 @@ header #nav-links a:visited {color: gainsboro;}
   justify-content: flex-start;
 }
 
-.testimonial-item img {height: 8em;}
+.testimonial-item img {
+  height: 8em;
+}
 
 .testimonial-item h3 {
   padding-top: 0.5em;
@@ -300,8 +377,8 @@ header #nav-links a:visited {color: gainsboro;}
   padding: 1em;
   font-size: 1.25em;
   overflow: scroll;
+  text-shadow: 2px 2px rgb(145, 127, 127);
 }
-
 
 
 /* CONTACT ME */
@@ -319,19 +396,24 @@ header #nav-links a:visited {color: gainsboro;}
   align-items: center;
 }
 
+#contact-form form {
+  text-align: center;
+}
+
 #contact-section h2 {
   text-align: center;
   font-size: 2.5em;
   color: black;
+  text-shadow: 3px 3px rgb(145, 127, 127);
 }
 
-#contact-section form { 
-  max-width: 600px; 
-  margin: 3em auto; 
+#contact-section form {
+  max-width: 600px;
+  margin: 3em auto;
 }
 
 #contact-section .form-input-field {
-  color:white;
+  color: white;
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
@@ -344,10 +426,11 @@ header #nav-links a:visited {color: gainsboro;}
   width: 100%;
   box-sizing: border-box;
   outline: 0;
+  text-shadow: 1px 1px rgb(145, 127, 127);
 }
 
-#contact-section .form-input-field:focus { 
-  border: 0.25em double black; 
+#contact-section .form-input-field:focus {
+  border: 0.25em double black;
 }
 
 #contact-section textarea {
@@ -357,7 +440,7 @@ header #nav-links a:visited {color: gainsboro;}
 }
 
 #contact-section [type="submit"] {
-  width: 100%;
+  width: 30%;
   background-color: black;
   border-radius: 0.5em;
   border: 0.25em double rgb(145, 127, 127);
@@ -367,16 +450,44 @@ header #nav-links a:visited {color: gainsboro;}
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
+  margin-top: -4px;
+  margin-left: auto;
   font-weight: 700;
 }
 
-#contact-section [type="submit"]:hover { 
+#contact-section [type="submit"]:hover {
   background-color: rgb(145, 127, 127);
   color: black;
-  border: 0.25em double black; 
+  border: 0.25em double black;
 }
 
+@media (max-width: 768px) {
+  #contact-section h2 {
+    font-size: 1.75em;
+  }
+
+  #contact-section form {
+    max-width: 300px;
+    margin: 1em auto;
+  }
+
+  #contact-section .form-input-field {
+    font-weight: 400;
+    font-size: 1em;
+    border-radius: 4px;
+    line-height: 1em;
+  }
+
+  #contact-section textarea {
+    height: 100px;
+  }
+
+  #contact-section [type="submit"] {
+    color: rgb(145, 127, 127);
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+}
 
 
 /* FOOTER */
@@ -386,30 +497,54 @@ footer {
   align-items: center;
   justify-content: center;
   height: 12%;
+  padding: 1em;
   background-color: rgb(145, 127, 127);
   font-size: small;
   position: sticky;
   bottom: 0;
 }
 
-footer .social-link-item {float: left;}
+footer #social-links li {
+  display: inline-block;
+  margin: 1em 0.25em;
+}
 
-footer .social-link-item img {height: 1.75em;}
+footer #social-links img {
+  height: 1.5em;
+}
 
-footer .social-link-item img:hover {
+footer #social-links img:hover {
   transform: scale(1.2);
   transition: 0.3s ease-in-out;
 }
 
-footer .social-link-item a {
-  display: inline-block;
+footer #social-links a {
   text-align: center;
   padding: 0.75em;
   font: 1.5em 'Courier New', Courier, monospace
 }
 
 footer #copyright {
-  font-size: medium;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 500;
   color: black;
+}
+
+@media (max-width: 768px) {
+  footer #social-links li {
+    margin: 0.75em 0;
+  }
+  
+  footer #social-links img {
+    height: 1.25em;
+  }
+  
+  footer #social-links a {
+    padding: 0.5em;
+    font: 1.5em 'Courier New', Courier, monospace
+  }
+  
+  footer #copyright {
+    font-size: 0.9em;
+  }
 }
