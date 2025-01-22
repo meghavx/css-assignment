@@ -1,174 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <meta name="author" content="Megha Verma">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <body>
+    <header>
+      <img id="header-logo" src="assets/logo.png" alt="Logo Image">
+      <nav id="navbar">
+        <ul id="nav-links">
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#portfolio-section">Portfolio</a></li>
+          <li><a href="#testimonials-section">Testimonials</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <meta charset="UTF-8">
-  <meta name="author" content="Megha Verma">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <section id="home-section">
+      <h1>Welcome</h1>
+      <h2>to my portfolio!</h2>
+      <button>
+        <a href="#portfolio-section">See My Work</a>
+      </button>
+    </section>
 
-<body>
-  <header>
-    <img id="header-logo" src="assets/logo.png" alt="Logo Image">
-    <nav id="navbar">
-      <ul id="nav-links">
-        <li><a href="#home-section">Home</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#portfolio-section">Portfolio</a></li>
-        <li><a href="#testimonials-section">Testimonials</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home-section">
-    <h1>Welcome</h1>
-    <h2>to my portfolio!</h2>
-    <button>
-      <a href="#portfolio-section">See My Work</a>
-    </button>
-  </section>
-
-  <section id="about-section">
-    <div id="about-section-photo">
-      <img src="assets/man_4825015.png" alt="About Me Picture">
-    </div>
-    <div id="about-section-bio">
-      <span>Hi</span>, my name is <strong>Nathan Brown</strong>.
-      <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, delectus sint!
-      <br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, at aut! Quisquam recusandae nemo ut voluptas! Modi illo est sunt id beatae, atque quasi assumenda minus maxime error repudiandae quos.
-    </div>
-  </section>
-  
-  <section id="portfolio-section">
-    <h2>Projects</h2>
-    <div id="portfolio">
-      <div class="portfolio-item">
-        <img src="https://img.freepik.com/free-vector/hand-drawn-w-colours-illustration_52683-100270.jpg?t=st=1736490192~exp=1736493792~hmac=4d42c1615d8c4e7411b5056cf128bf724060767444f9807e22239b1240f2d960&w=826" alt="Portfolio Item Image">
-        <div class="portfolio-item-overlay">
-          <h3>Project A</h3>
-          <p>Here goes a brief description of the project.</p>
-        </div>
+    <section id="about-section">
+      <div id="about-section-photo">
+        <img src="assets/man_4825015.png" alt="About Me Picture">
       </div>
-      <div class="portfolio-item">
-        <img src="https://img.freepik.com/free-vector/beautiful-woman-surrounded-by-nature-illustration_53876-118423.jpg?t=st=1736491441~exp=1736495041~hmac=fcbc0c26c0bbef57f5d84e4add416386a2df7b70905f13f94fabbd458887b867&w=826" alt="Portfolio Item Image">
-        <div class="portfolio-item-overlay">
-          <h3>Project B</h3>
-          <p>Here goes a brief description of the project.</p>
-        </div>
+      <div id="about-section-bio">
+        <span>Hi</span>, my name is <strong>Nathan Brown</strong>.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, delectus sint!
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, at aut! Quisquam recusandae nemo ut voluptas! Modi illo est sunt id beatae, atque quasi assumenda minus maxime error repudiandae quos.
       </div>
-      <div class="portfolio-item">
-        <img src="https://img.freepik.com/free-vector/hand-drawn-antelope_23-2147524323.jpg?t=st=1736491548~exp=1736495148~hmac=e5980c3ec1c57ce2e4ac9b440df99eaafbe4f448925b332db66c3980fdb6b92c&w=826" alt="Portfolio Item Image">
-        <div class="portfolio-item-overlay">
-          <h3>Project C</h3>
-          <p>Here goes a brief description of the project.</p>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-autumn-illustration_23-2149096656.jpg?t=st=1736490326~exp=1736493926~hmac=5add33a45f21809a0292b374a06d8380cb9a98f85e9dfb601d450000095fe8ed&w=826" alt="Portfolio Item Image">
-        <div class="portfolio-item-overlay">
-          <h3>Project D</h3>
-          <p>Here goes a brief description of the project.</p>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://img.freepik.com/free-vector/flat-design-man-forest-illustration_52683-94451.jpg?t=st=1736490266~exp=1736493866~hmac=e76141e9672f5ec21ceb4623108192281007dbf122345321a00cc4285323aa8d&w=826" alt="Portfolio Item Image">
-        <div class="portfolio-item-overlay">
-          <h3>Project E</h3>
-          <p>Here goes a brief description of the project.</p>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://img.freepik.com/free-vector/beautiful-purple-woman-surrounded-by-nature-illustration_53876-97561.jpg?t=st=1736490235~exp=1736493835~hmac=0dc69a6ee93db12dfdad677fee2cae3e55a387c49b29c52b02788a2a37f16123&w=826" alt="Portfolio Item Image">
-        <div class="portfolio-item-overlay">
-          <h3>Project F</h3>
-          <p>Here goes a brief description of the project.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials-section">
-    <h2>Testimonials</h2>
-    <div id="testimonials">
-      <div class="testimonial-item">
-        <img src="assets/man_4825087.png" alt="Client Photo">
-        <h3>John Doe</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque ipsam inventore iure non rem doloribus, pariatur, nulla sint repudiandae voluptatum quas quod.</p>
-      </div>
-
-      <div class="testimonial-item">
-        <img src="assets/woman_4825076.png" alt="Client Photo">
-        <h3>Nelly Furtado</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laboriosam corrupti tenetur quia soluta debitis similique recusandae culpa optio, cumque qui, adipisci quidem, obcaecati cum voluptas illo ipsam perferendis atque.</p>
-      </div>
-
-      <div class="testimonial-item">
-        <img src="assets/man_4825038.png" alt="Client Photo">
-        <h3>Daniel Jackson</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis error tempora! Voluptates a vero possimus illum non ullam quam, quae tempore ipsa.</p>
-      </div>
-    </div>
+    </section>
     
-  </section>
+    <section id="portfolio-section">
+      <h2>Projects</h2>
+      <div id="portfolio">
+        <div class="portfolio-item">
+          <img src="https://img.freepik.com/free-vector/hand-drawn-w-colours-illustration_52683-100270.jpg?t=st=1736490192~exp=1736493792~hmac=4d42c1615d8c4e7411b5056cf128bf724060767444f9807e22239b1240f2d960&w=826" alt="Portfolio Item Image">
+          <div class="portfolio-item-overlay">
+            <h3>Project A</h3>
+            <p>Here goes a brief description of the project.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://img.freepik.com/free-vector/beautiful-woman-surrounded-by-nature-illustration_53876-118423.jpg?t=st=1736491441~exp=1736495041~hmac=fcbc0c26c0bbef57f5d84e4add416386a2df7b70905f13f94fabbd458887b867&w=826" alt="Portfolio Item Image">
+          <div class="portfolio-item-overlay">
+            <h3>Project B</h3>
+            <p>Here goes a brief description of the project.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://img.freepik.com/free-vector/hand-drawn-antelope_23-2147524323.jpg?t=st=1736491548~exp=1736495148~hmac=e5980c3ec1c57ce2e4ac9b440df99eaafbe4f448925b332db66c3980fdb6b92c&w=826" alt="Portfolio Item Image">
+          <div class="portfolio-item-overlay">
+            <h3>Project C</h3>
+            <p>Here goes a brief description of the project.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://img.freepik.com/free-vector/hand-drawn-flat-autumn-illustration_23-2149096656.jpg?t=st=1736490326~exp=1736493926~hmac=5add33a45f21809a0292b374a06d8380cb9a98f85e9dfb601d450000095fe8ed&w=826" alt="Portfolio Item Image">
+          <div class="portfolio-item-overlay">
+            <h3>Project D</h3>
+            <p>Here goes a brief description of the project.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://img.freepik.com/free-vector/flat-design-man-forest-illustration_52683-94451.jpg?t=st=1736490266~exp=1736493866~hmac=e76141e9672f5ec21ceb4623108192281007dbf122345321a00cc4285323aa8d&w=826" alt="Portfolio Item Image">
+          <div class="portfolio-item-overlay">
+            <h3>Project E</h3>
+            <p>Here goes a brief description of the project.</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://img.freepik.com/free-vector/beautiful-purple-woman-surrounded-by-nature-illustration_53876-97561.jpg?t=st=1736490235~exp=1736493835~hmac=0dc69a6ee93db12dfdad677fee2cae3e55a387c49b29c52b02788a2a37f16123&w=826" alt="Portfolio Item Image">
+          <div class="portfolio-item-overlay">
+            <h3>Project F</h3>
+            <p>Here goes a brief description of the project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact-section">
-    <h2>Send a message</h2>
-    <div id="contact-form">
-      <form>      
-        <input name="name" type="text" class="form-input-field" placeholder="Name" required/>
-        <input name="email" type="email" class="form-input-field" placeholder="Email" required/>
-        <textarea name="text" class="form-input-field" placeholder="Message"></textarea>
-        <input type="submit" value="SEND"/>
-      </form>
-    </div>
-  </section>
+    <section id="testimonials-section">
+      <h2>Testimonials</h2>
+      <div id="testimonials">
+        <div class="testimonial-item">
+          <img src="assets/man_4825087.png" alt="Client Photo">
+          <h3>John Doe</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque ipsam inventore iure non rem doloribus, pariatur, nulla sint repudiandae voluptatum quas quod.</p>
+        </div>
 
-  <footer>
-    <div id="social-links">
-      <ul>
-        <li class="social-link-item">
-          <a href="mailto:megha.verma@g10x.com" target="_blank">
-            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" alt="Email Icon">
-          </a>
-        </li>
-        <li class="social-link-item">
-          <a href="https://www.linkedin.com/in/meghaaverma" target="_blank">
-            <img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" alt="LinkedIn Icon">
-          </a>
-        </li>
-        <li class="social-link-item">
-          <a href="https://github.com/meghavx/" target="_blank">
-            <img src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" alt="GitHub Icon">
-          </a>
-        </li>
-      </ul>
-    </div>
+        <div class="testimonial-item">
+          <img src="assets/woman_4825076.png" alt="Client Photo">
+          <h3>Nelly Furtado</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto laboriosam corrupti tenetur quia soluta debitis similique recusandae culpa optio, cumque qui, adipisci quidem, obcaecati cum voluptas illo ipsam perferendis atque.</p>
+        </div>
+
+        <div class="testimonial-item">
+          <img src="assets/man_4825038.png" alt="Client Photo">
+          <h3>Daniel Jackson</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis error tempora! Voluptates a vero possimus illum non ullam quam, quae tempore ipsa.</p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="contact-section">
+      <h2>Send a message</h2>
+      <div id="contact-form">
+        <form>      
+          <input name="name" type="text" class="form-input-field" placeholder="Name" required/>
+          <input name="email" type="email" class="form-input-field" placeholder="Email" required/>
+          <textarea name="text" class="form-input-field" placeholder="Message"></textarea>
+          <input type="submit" value="SEND"/>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div id="social-links">
+        <ul>
+          <li class="social-link-item">
+            <a href="mailto:megha.verma@g10x.com" target="_blank">
+              <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/email-1772428-1508324.png?f=webp&w=256" alt="Email Icon">
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a href="https://www.linkedin.com/in/meghaaverma" target="_blank">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-icon-download-in-svg-png-gif-file-formats--logo-business-social-media-ios-apps-and-settings-pack-user-interface-icons-1570216.png?f=webp&w=512" alt="LinkedIn Icon">
+            </a>
+          </li>
+          <li class="social-link-item">
+            <a href="https://github.com/meghavx/" target="_blank">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-2496133.png?f=webp&w=512" alt="GitHub Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- <cite id="citations">
+        <ul>
+          <li>
+            This webpage uses books-related data sourced from <a href="https://www.goodreads.com" target="_blank">Goodreads</a>. All rights to the data belong to Goodreads.
+          </li>
     
-    <!-- <cite id="citations">
-      <ul>
-        <li>
-          This webpage uses books-related data sourced from <a href="https://www.goodreads.com" target="_blank">Goodreads</a>. All rights to the data belong to Goodreads.
-        </li>
-  
-        <li>
-          The images used for this project are freely usable images sourced from <a href="https://www.freepik.com/" target="_blank">FreePik</a> and <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
-        </li>
-      </ul>
-    </cite> -->
-  
-    <div id="copyright">
-      &copy; 2025 Megha V. All rights reserved.
-    </div>
-  </footer>
-</body>
+          <li>
+            The images used for this project are freely usable images sourced from <a href="https://www.freepik.com/" target="_blank">FreePik</a> and <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
+          </li>
+        </ul>
+      </cite> -->
+    
+      <div id="copyright">
+        &copy; 2025 Megha V. All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>
